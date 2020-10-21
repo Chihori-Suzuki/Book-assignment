@@ -10,10 +10,14 @@ public class Driver {
 	}
 	
 	public static void printBooks(Book[] bookArray) {
+		double totalPrice = 0;
 		for (int i = 0; i < bookArray.length; i++) {
 			System.out.println(bookArray[i].getTitle() + " " + bookArray[i].getFirstName() + " " + 
-					bookArray[i].getLastName() + " " + bookArray[i].getYear());
+					bookArray[i].getLastName() + " " + bookArray[i].getYear() + " " + bookArray[i].getTotalPrice());
+			totalPrice = totalPrice + bookArray[i].getTotalPrice();
 		}
+		System.out.println("total price is : " + totalPrice);
+		
 	}
 	
 	

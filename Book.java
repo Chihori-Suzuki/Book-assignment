@@ -100,7 +100,7 @@ public class Book {
 	 * Set the setYear
 	 */
 	public void setPrice(double price) {
-		this.price = price * 1.12;
+		this.price = price * 1.120;
 	}
 	
 	
