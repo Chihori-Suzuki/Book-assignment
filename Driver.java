@@ -40,6 +40,8 @@ public class Driver {
 		bookArray[0].setFirstName("NewFirst");
 		bookArray[0].setLastName("NewLast");
 		bookArray[0].setYear(1992);
+		bookArray[0].setPrice(200);
+		
 		printBooks(bookArray);
  
 	}

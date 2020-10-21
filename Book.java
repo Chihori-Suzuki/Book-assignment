@@ -5,11 +5,13 @@ public class Book {
 	// fistName
 	// lastName
 	// published year
+	// 
 	
 	private String bookTitle;
 	private String firstName;
 	private String lastName;
 	private int year;
+	private double price;
 	
 	
 	public Book(String bookTitle, String firstName, String lastName, int year) {
@@ -18,7 +20,8 @@ public class Book {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.year = year;
-
+		this.price = 0;
+		
 	}
 	
 	/*
@@ -45,6 +48,14 @@ public class Book {
 	public int getYear() {
 		return year;
 	}
+	/*
+	 * @return price
+	 */
+	public double getTotalPrice() {
+		return price;
+	}
+	
+	
 	/*
 	 * Set the setTitle
 	 */
@@ -84,6 +95,12 @@ public class Book {
 		} else {
 			this.year = pYear;
 		}
+	}
+	/*
+	 * Set the setYear
+	 */
+	public void setPrice(double price) {
+		this.price = price * 1.12;
 	}
 	
 	
