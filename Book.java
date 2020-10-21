@@ -12,12 +12,12 @@ public class Book {
 	private int year;
 	
 	
-	public Book(String title, String fName, String lName, int pYear) {
+	public Book(String bookTitle, String firstName, String lastName, int year) {
 		
-		bookTitle = title;
-		firstName = fName;
-		lastName = lName;
-		year = pYear;
+		this.bookTitle = bookTitle;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.year = year;
 
 	}
 	
@@ -27,8 +27,6 @@ public class Book {
 	public String getTitle() {
 		return bookTitle;
 	}
-
-	
 	/*
 	 * @return firstName
 	 */
@@ -41,19 +39,20 @@ public class Book {
 	public String getLastName() {
 		return lastName;
 	}
-	
 	/*
 	 * @return year
 	 */
 	public int getYear() {
 		return year;
 	}
-	
+	/*
+	 * Set the setTitle
+	 */
 	public void setTitle(String title) {
 		if(title == "") {
-			bookTitle = "Unknown";
+			this.bookTitle = "Unknown";
 		} else {
-			bookTitle = title;
+			this.bookTitle = title;
 		}
 	}
 	/*
@@ -61,9 +60,9 @@ public class Book {
 	 */
 	public void setFirstName(String fName) {
 		if(fName == "" || fName == null) {
-			firstName = "Jhon";
+			this.firstName = "Jhon";
 		} else {
-			firstName = fName;
+			this.firstName = fName;
 		}
 	}
 	/*
@@ -71,16 +70,19 @@ public class Book {
 	 */
 	public void setLastName(String lName) {
 		if(lName == "" || lName == null) {
-			lastName = "Dew";
+			this.lastName = "Dew";
 		} else {
-			lastName = lName;
+			this.lastName = lName;
 		}
 	}
+	/*
+	 * Set the setYear
+	 */
 	public void setYear(int pYear) {
 		if(pYear < 1990 ) {
-			year = 1990;
+			this.year = 1990;
 		} else {
-			year = pYear;
+			this.year = pYear;
 		}
 	}
 	
